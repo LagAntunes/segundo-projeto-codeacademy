@@ -1,0 +1,259 @@
+/* Formatação geral */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+/* ----- */
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header nav {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.header nav ul {
+  width: 100%;
+  height: auto;
+  min-height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: white;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: all ease-in-out 0.5s;
+}
+
+.header nav ul li a:hover {
+  color: wheat;
+  text-decoration: underline;
+}
+/* ----- */
+
+/* Content */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  display: flex;
+  align-self: center;
+  margin: 50px 0;
+  color: sandybrown;
+  font-size: 35px;
+  line-height: 1.2;
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  border-bottom: 5px dotted wheat;
+}
+
+section .conteudo {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  width: 80%;
+  height: auto;
+  padding: 30px 70px;
+  background-color: khaki;
+}
+
+section .conteudo .conteudo-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+section .conteudo .conteudo-texto h3 {
+  font-size: 28px;
+  line-height: 1.3;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: tomato;
+}
+
+section .conteudo .conteudo-texto p {
+  font-size: 19px;
+  line-height: 1.2;
+  color: sienna;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+section .conteudo .conteudo-texto ul li,
+section .conteudo .conteudo-texto ol li {
+  font-size: 20px;
+  line-height: 1.5;
+  color: brown;
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.abertura {
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+
+.abertura::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.abertura video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.abertura-texto {
+  position: absolute;
+  top: 55%;
+  left: 70px;
+  max-width: 60%;
+}
+
+.abertura-texto h1 {
+  font-size: 45px;
+  line-height: 1.5;
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 20px;
+}
+
+.abertura-texto p {
+  font-size: 22px;
+  line-height: 1.3;
+  font-family: "Indie Flower", cursive;
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+}
+
+#quem-sou,
+#objetivos {
+  width: 100%;
+  height: auto;
+  align-items: start;
+  position: relative;
+}
+
+.quem-sou-conteudo,
+.objetivos-conteudo {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.quem-sou-conteudo img {
+  border-radius: 10px;
+}
+
+#gostos {
+  width: 100%;
+  height: auto;
+  align-items: end;
+  position: relative;
+}
+
+.gostos-conteudo {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* ----- */
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 100px;
+  padding: 20px 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer span {
+  font-size: 18px;
+  line-height: 1.2;
+  color: wheat;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer ul li {
+  text-align: center;
+}
+
+footer ul li a {
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: "Indie Flower", cursive;
+  font-weight: 500;
+  font-style: normal;
+  color: tomato;
+  text-decoration: none;
+  transition: all ease-in-out 0.5s;
+}
+
+footer ul li a:hover {
+  color: sandybrown;
+  text-decoration: underline;
+}
+/* ----- */
